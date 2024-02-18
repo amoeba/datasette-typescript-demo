@@ -18,7 +18,6 @@ This lets us:
 - Remove the duplication we'd need to do things like convert a normal SELECT query into a COUNT query (i.e., to get a row count from a normal query to produce pagingation controls).
 
 > ![NOTE]
->
 > This doesn't work yet as it uses Knex.js which doesn't supply a browser build out of the box. Once they do, this will work nicely.
 
 ## Requirements
