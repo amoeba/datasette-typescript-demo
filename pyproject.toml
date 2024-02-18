@@ -1,0 +1,29 @@
+[project]
+name = "datasette-typescript"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Bryce Mecum", email = "petridish@gmail.com" }
+]
+dependencies = [
+    "datasette>=0.64.6",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+hello = "datasette_typescript:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/datasette_typescript"]
